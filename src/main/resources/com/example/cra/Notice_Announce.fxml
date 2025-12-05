@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="658.0" prefWidth="889.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cra.NoticeAnnounceController">
+   <children>
+      <Button fx:id="AnnouncementButton" layoutX="121.0" layoutY="64.0" mnemonicParsing="false" onAction="#openNoticesScene" text="View Announcements" />
+      <TableView fx:id="NoticeListTableView" layoutX="187.0" layoutY="116.0" prefHeight="200.0" prefWidth="382.0">
+        <columns>
+          <TableColumn fx:id="DateTableColumn" prefWidth="75.0" text="Date" />
+          <TableColumn fx:id="TitleTableColumn" prefWidth="184.0" text="Title" />
+            <TableColumn fx:id="StatustableColumn" prefWidth="122.39996337890625" text="Status" />
+        </columns>
+      </TableView>
+      <Label fx:id="NoticeTitleLabel" layoutX="180.0" layoutY="329.0" text="Notice Title" />
+      <TextArea fx:id="FullNoticeContentTextArea" layoutX="638.0" layoutY="138.0" prefHeight="200.0" prefWidth="200.0" />
+      <Text layoutX="677.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Full Notice Content" />
+      <Button fx:id="MarkAsReadButton" layoutX="629.0" layoutY="353.0" mnemonicParsing="false" onAction="#openNoticesScene" text="Mark As Read" />
+   </children>
+</AnchorPane>

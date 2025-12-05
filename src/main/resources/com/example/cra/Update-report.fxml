@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="650.0" prefWidth="941.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cra.UpdateReportController">
+   <children>
+      <Label fx:id="MaintenanceOfficerLabel" layoutX="120.0" layoutY="46.0" text="Maintenance Officer" />
+      <TableView fx:id="SecurityLogTabelView" layoutX="143.0" layoutY="98.0" prefHeight="200.0" prefWidth="630.0">
+        <columns>
+          <TableColumn fx:id="DETAILSTableColumn" prefWidth="75.0" text="DETAILS" />
+          <TableColumn fx:id="LOCATIONTableColumn" prefWidth="242.40003967285156" text="LOCATION" />
+            <TableColumn fx:id="TIMESTAMPTableColumn" prefWidth="182.39996337890625" text="TIMESTAMP" />
+            <TableColumn fx:id="MEDIATableColumn" prefWidth="129.5999755859375" text="MEDIA" />
+        </columns>
+      </TableView>
+      <Text layoutX="174.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login ID" />
+      <Text layoutX="509.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" />
+      <TextField fx:id="LoginIDTextField" layoutX="227.0" layoutY="313.0" />
+      <TextField fx:id="LocationTextField" layoutX="567.0" layoutY="312.0" />
+      <ImageView fx:id="MediaImageView" fitHeight="71.0" fitWidth="142.0" layoutX="567.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="VerificationStatusLabel" layoutX="601.0" layoutY="424.0" text="VErification Status" />
+      <TextField fx:id="NotesInputTextField" layoutX="242.0" layoutY="376.0" onAction="#handleNotesInput" />
+      <Text layoutX="159.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notes Input" />
+      <ChoiceBox fx:id="SelectClassificationsChoiceBox" layoutX="242.0" layoutY="429.0" prefWidth="150.0" />
+      <Text layoutX="128.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Classifications" />
+      <Button fx:id="EventUpdateButton" layoutX="797.0" layoutY="421.0" mnemonicParsing="false" onAction="#handleEventUpdate" text="Event Update" />
+      <TextArea fx:id="REPORTPREVIEWTextArea" layoutX="26.0" layoutY="468.0" prefHeight="88.0" prefWidth="234.0" text="&#10;&#10;                  REPORT PREVIEW" />
+      <Button fx:id="FinalUpdateButton" layoutX="809.0" layoutY="480.0" mnemonicParsing="false" onAction="#handleFinalUpdate" text="Final Update" />
+      <Label fx:id="NotificationConfirmLabel" layoutX="92.0" layoutY="582.0" text="Notification Confirm" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="613.0" prefWidth="877.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cra.ResidentRequestController">
+   <children>
+      <ComboBox fx:id="SelectIssueComboBox" layoutX="123.0" layoutY="84.0" onAction="#OnIssueTypeChange" prefWidth="150.0" promptText="Select Issue" />
+      <TextField fx:id="DescribeIssueTextField" layoutX="438.0" layoutY="84.0" onAction="#handleDescriptionInput" />
+      <Text layoutX="351.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Describe Issue" />
+      <TextField fx:id="LocationtextField" layoutX="438.0" layoutY="134.0" onAction="#handleLocationInput" />
+      <Text layoutX="366.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" />
+      <Button fx:id="AttachAttachmentsButton" layoutX="439.0" layoutY="173.0" mnemonicParsing="false" onAction="#handlePhotoUpload" text="Attach Attachements" />
+      <Label fx:id="ValidationErrorLabel" layoutX="438.0" layoutY="215.0" text="Validation Error" />
+      <Button fx:id="SumbitButton" layoutX="109.0" layoutY="134.0" mnemonicParsing="false" onAction="#CreateServiceTicket" text="Submit Service Request" />
+      <Label fx:id="ConfirmationMessageLabel" layoutX="109.0" layoutY="177.0" text="Confirmation Message" />
+      <Label fx:id="StatusNotificationLabel" layoutX="109.0" layoutY="206.0" text="Status Notification" />
+   </children>
+</AnchorPane>
