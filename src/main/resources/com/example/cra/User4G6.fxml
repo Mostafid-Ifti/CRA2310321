@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="532.0" prefWidth="665.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cra.User4G6Controller">
+   <children>
+      <TableView fx:id="ActionUpdateTableView" layoutX="116.0" layoutY="59.0" prefHeight="200.0" prefWidth="457.0">
+        <columns>
+          <TableColumn fx:id="OfficerIdtableColumn" prefWidth="96.79998779296875" text="Officer Id" />
+          <TableColumn fx:id="TimestampTavleColumn" prefWidth="92.79997253417969" text="Timestamp" />
+            <TableColumn fx:id="ActiontakentableColumn" prefWidth="120.800048828125" text="Action Taken" />
+            <TableColumn fx:id="StatustableColumn" prefWidth="147.199951171875" text="Status" />
+        </columns>
+      </TableView>
+      <Button fx:id="Safetyissuebutton" layoutX="116.0" layoutY="266.0" mnemonicParsing="false" onAction="#handleSafetyIssue" text="Report Safety issue" />
+      <Button fx:id="SubmitReportbutton" layoutX="440.0" layoutY="266.0" mnemonicParsing="false" onAction="#handleSubmitreport" text="Submit Report" />
+      <Button fx:id="Attachmediabutton" layoutX="273.0" layoutY="266.0" mnemonicParsing="false" onAction="#handleAttachmedia" text="Attach media" />
+      <TextField fx:id="LocationTextField" layoutX="116.0" layoutY="310.0" />
+      <Text layoutX="67.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" />
+      <TextArea fx:id="DescriptionTextArea" layoutX="12.0" layoutY="336.0" prefHeight="200.0" prefWidth="200.0" />
+      <Text layoutX="78.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+      <ComboBox fx:id="CategoryComboBox" layoutX="241.0" layoutY="368.0" prefWidth="150.0" promptText="Category" />
+      <Label fx:id="Validatemessagelabel" layoutX="241.0" layoutY="402.0" text="Validate Message" />
+      <Label fx:id="ConfirmationIdLabel" layoutX="447.0" layoutY="402.0" text="Confirmation ID" />
+   </children>
+</AnchorPane>

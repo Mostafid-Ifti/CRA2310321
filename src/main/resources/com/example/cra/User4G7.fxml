@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="535.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cra.User4G7Contorller">
+   <children>
+      <TableView fx:id="FacilityListTableView" layoutX="134.0" layoutY="68.0" prefHeight="200.0" prefWidth="494.0">
+        <columns>
+          <TableColumn fx:id="FacilityNameTablecolumn" prefWidth="90.4000244140625" text="Facility Name" />
+          <TableColumn fx:id="LocationTableColumn" prefWidth="77.59996032714844" text="Location" />
+            <TableColumn fx:id="CurrentStatustableColumn" prefWidth="104.0" text="Current Status" />
+            <TableColumn fx:id="BookingFeeTableColumn" prefWidth="94.4000244140625" text="Booking Fee" />
+            <TableColumn fx:id="MaxCapacitytableColumn" prefWidth="128.00006103515625" text="Max Capacity" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="ChooseDateDatepicker" layoutX="452.0" layoutY="24.0" />
+      <Button fx:id="FacilityBookingModuleButton" layoutX="134.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleFacilityModule" text="Facility Booking Module" />
+      <ComboBox fx:id="TimeSlotComboBox" layoutX="134.0" layoutY="334.0" prefWidth="150.0" promptText="Time Slot" />
+      <Button fx:id="ConfirmPaymentButton" layoutX="502.0" layoutY="334.0" mnemonicParsing="false" onAction="#handleConfirmPayment" text="Confirm Payment" />
+      <Button fx:id="BookingButton" layoutX="332.0" layoutY="334.0" mnemonicParsing="false" onAction="#handleBooking" text="Request Booking" />
+      <Label fx:id="EligibilityLabel" layoutX="341.0" layoutY="374.0" text="Eligibity Status" />
+      <Label fx:id="ConfirmationStatusLabel" layoutX="501.0" layoutY="374.0" text="Confirmation Status" />
+      <TextField fx:id="PurposeTextField" layoutX="135.0" layoutY="379.0" />
+      <Text layoutX="81.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Purpose" />
+   </children>
+</AnchorPane>

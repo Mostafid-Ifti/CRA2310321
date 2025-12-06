@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="519.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cra.User3G8Controller">
+   <children>
+      <Label fx:id="ModeulLabel" layoutX="311.0" layoutY="34.0" text="Modeul Title" />
+      <TableView fx:id="maintenanceTableView" layoutX="174.0" layoutY="80.0" prefHeight="200.0" prefWidth="397.0">
+        <columns>
+          <TableColumn fx:id="TicketTableColumn" prefWidth="191.99993896484375" text="Ticket Completeness" />
+          <TableColumn fx:id="FollowUpTableColumn" minWidth="0.0" prefWidth="205.60000610351562" text="Follow-up Status" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="MonthDatepicker" layoutX="24.0" layoutY="22.0" onAction="#handleMonth" />
+      <TextArea fx:id="OfficerTextArea" layoutY="319.0" prefHeight="200.0" prefWidth="200.0" text="                 Officer Remarks&#10;" />
+      <Button fx:id="GenerateReportButton" layoutX="220.0" layoutY="294.0" mnemonicParsing="false" onAction="#handlereport" text="Generate Report" />
+      <Button fx:id="ArchieveReportButton" layoutX="233.0" layoutY="455.0" mnemonicParsing="false" onAction="#handleArchieve" text="Archive Report" />
+      <Button fx:id="ExportPDFbutton" layoutX="520.0" layoutY="291.0" mnemonicParsing="false" onAction="#handleexportPDF" text="Export PDF" />
+   </children>
+</AnchorPane>
